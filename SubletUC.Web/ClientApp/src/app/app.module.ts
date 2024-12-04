@@ -21,8 +21,10 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     HttpClientModule,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
