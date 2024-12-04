@@ -1,0 +1,12 @@
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\bin\Debug\net6.0\SubletUC.Data.deps.json
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\bin\Debug\net6.0\SubletUC.Data.dll
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\bin\Debug\net6.0\SubletUC.Data.pdb
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.csproj.AssemblyReference.cache
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.AssemblyInfoInputs.cache
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.AssemblyInfo.cs
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.csproj.CoreCompileInputs.cache
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.dll
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\refint\SubletUC.Data.dll
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\SubletUC.Data.pdb
+C:\Users\taylochi\source\repos\SubletUC.Web\SubletUC.Data\obj\Debug\net6.0\ref\SubletUC.Data.dll
