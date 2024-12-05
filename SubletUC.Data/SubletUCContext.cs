@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-namespace SubletUC.Data.Classes;
-
+namespace SubletUC.Data;
 using NodaTime;
-using SubletUC.Data.Enum;
+
 public class SubletUCContext : DbContext
 {
     private int? userId;

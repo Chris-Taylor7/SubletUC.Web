@@ -1,7 +1,6 @@
-namespace SubletUC.Data.Classes;
-
 using NodaTime;
 using SubletUC.Data.Enum;
+namespace SubletUC.Data;
 public class User
 { 
     public int UserId { get; set; }

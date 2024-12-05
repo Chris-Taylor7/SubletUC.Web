@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace SubletUC.Data.Classes;
+namespace SubletUC.Data;
 public class Listing
 {
     public int ListingId { get; set; }

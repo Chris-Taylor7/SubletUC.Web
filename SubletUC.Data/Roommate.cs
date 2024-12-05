@@ -1,5 +1,6 @@
-namespace SubletUC.Data.Classes;
 using SubletUC.Data.Enum;
+
+namespace SubletUC.Data;
 public class Roommate
 {   
     public int RoommateId { get; set; }

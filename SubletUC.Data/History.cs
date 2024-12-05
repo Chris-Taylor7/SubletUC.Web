@@ -1,7 +1,6 @@
 using NodaTime;
-using SubletUC.Data.Classes;
 
-namespace SubletUC.Data.Classes;
+namespace SubletUC.Data;
 public class History
 {
      public bool Deleted {get; set;}

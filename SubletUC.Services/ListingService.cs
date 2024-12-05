@@ -1,11 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using SubletUC.Data;
 
 namespace SubletUC.Services;
-    public class ListingService : IListingService
+    public class ListingService 
     {
         private readonly SubletUCContext _context;
 
@@ -74,7 +70,7 @@ namespace SubletUC.Services;
 
         public Listing GetListingById(int id)
         {
-            return _context.Listings.FirstOrDefault(x => x.ListingId == id);
+            return _context.Listings.FirstOrDefault(x => x.ListingId == id) ?? new Listing();
         }
 
         public ServiceResponse DeleteListing(int id)

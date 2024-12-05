@@ -1,7 +1,7 @@
-namespace SubletUC.Data.Toasts;
-public class ServiceResponse<T>
+namespace SubletUC.Data;
+public class ServiceResponse
 {
-    public T? Data { get; set; }
+    public int? id { get; set; }
     public bool Success { get; set; } = false;
     public string Message { get; set; } = "";
 }
