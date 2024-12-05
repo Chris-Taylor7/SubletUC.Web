@@ -140,9 +140,6 @@
             "projectReferences": {
               "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Data\\SubletUC.Data.csproj": {
                 "projectPath": "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Data\\SubletUC.Data.csproj"
-              },
-              "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Services\\SubletUC.Services.csproj": {
-                "projectPath": "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Services\\SubletUC.Services.csproj"
               }
             }
           }

@@ -25,7 +25,6 @@
 
   <ItemGroup>
 	<ProjectReference Include="..\SubletUC.Data\SubletUC.Data.csproj" />
-	<ProjectReference Include="..\SubletUC.Services\SubletUC.Services.csproj" />
 </ItemGroup>
 
 </Project>

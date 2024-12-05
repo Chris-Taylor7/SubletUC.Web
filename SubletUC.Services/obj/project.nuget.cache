@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "6kcA9df1/wU=",
-  "success": false,
+  "dgSpecHash": "fOf0gGsU3X4=",
+  "success": true,
   "projectFilePath": "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Services\\SubletUC.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chtay\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
@@ -125,15 +125,5 @@
     "C:\\Users\\chtay\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  SubletUC.Services -> SubletUC.Services.",
-      "libraryId": "SubletUC.Services",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

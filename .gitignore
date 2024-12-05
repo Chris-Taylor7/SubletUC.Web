@@ -1,0 +1,7 @@
+.vs/*
+
+SubletUC.Data/bin/*
+SubletUC.Data/obj/*
+
+SubletUC.Services/bin/*
+SubletUC.Services/obj/*

@@ -5451,7 +5451,6 @@
       "NodaTime >= 3.1.6",
       "NodaTime.Serialization.JsonNet >= 3.0.1",
       "SubletUC.Data >= 1.0.0",
-      "SubletUC.Services >= 1.0.0",
       "System.IO >= 4.3.0"
     ]
   },
@@ -5485,9 +5484,6 @@
           "projectReferences": {
             "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Data\\SubletUC.Data.csproj": {
               "projectPath": "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Data\\SubletUC.Data.csproj"
-            },
-            "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Services\\SubletUC.Services.csproj": {
-              "projectPath": "C:\\Users\\chtay\\source\\repos\\SubletUC.Web\\SubletUC.Services\\SubletUC.Services.csproj"
             }
           }
         }
@@ -5573,16 +5569,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  SubletUC.Services -> SubletUC.Services.",
-      "libraryId": "SubletUC.Services",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
