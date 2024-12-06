@@ -8,6 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { ListingModule } from './modules/listing/listing.module';
+import { CreateListingModule } from './modules/create-listing/create-listing.module';
+import { ProfileModule } from './modules/profile/profile.module';
+import { ViewListingsModule } from './modules/view-listings/view-listings.module';
+import { MessageModule } from './modules/message/message.module';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -20,6 +26,12 @@ import { CommonModule } from '@angular/common';
     RouterModule,
     AppRoutingModule,
     HttpClientModule,
+    ListingModule,
+    CreateListingModule,
+    ProfileModule,
+    ViewListingsModule,
+    MessageModule,
+    DialogModule
 
   ],
   providers: [],
