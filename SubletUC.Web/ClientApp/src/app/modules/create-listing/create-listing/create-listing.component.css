@@ -1,0 +1,13 @@
+/* Change the checked color of PrimeNG checkboxes */
+.p-checkbox .p-checkbox-box {
+  border: 1px solid #fff; /* Border color when unchecked */
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background-color: #e00122 !important; /* Checked background color */
+  border-color: #e00122 !important; /* Checked border color */
+}
+
+.p-checkbox .p-checkbox-icon {
+  color: #fff; /* Icon color */
+}
