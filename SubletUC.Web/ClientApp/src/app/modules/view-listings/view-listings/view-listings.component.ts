@@ -3,10 +3,11 @@ import { Listing } from 'src/app/data/listing';
 import { Gender } from 'src/app/data/roommate';
 import { ListingService } from 'src/app/services/listing-service';
 import { ListingComponent } from "../../listing/listing/listing.component";
+import { Dialog } from 'primeng/dialog';
 @Component({
   selector: 'app-view-listings',
   templateUrl: './view-listings.component.html',
-  styleUrl: './view-listings.component.css'
+  styleUrl: './view-listings.component.css',
 })
 export class ViewListingsComponent {
   constructor(private listingService: ListingService) {}
