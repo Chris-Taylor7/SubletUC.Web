@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, NavbarComponent, FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,8 +20,6 @@ import { CommonModule } from '@angular/common';
     RouterModule,
     AppRoutingModule,
     HttpClientModule,
-    NavbarComponent,
-    FooterComponent,
 
   ],
   providers: [],

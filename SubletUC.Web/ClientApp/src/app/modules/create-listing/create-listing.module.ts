@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateListingComponent } from './create-listing/create-listing.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [CreateListingComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    ReactiveFormsModule,
+  ],
+  exports: [CreateListingComponent]
 })
 export class CreateListingModule { }
