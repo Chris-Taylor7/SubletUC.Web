@@ -9,5 +9,11 @@ import { Listing } from 'src/app/data/listing';
 })
 export class ListingComponent {
   @Input() listing: Listing | undefined; // Use the listing input directly
-  displayDialog: boolean = true;
+  @Input()
+  @Input() displayDialog: boolean = true;
+
+  closeDialog() {
+    this.displayDialog = false; // Hide the dialog
+    this.listing = undefined; // Reset selected listing
+  }
 }

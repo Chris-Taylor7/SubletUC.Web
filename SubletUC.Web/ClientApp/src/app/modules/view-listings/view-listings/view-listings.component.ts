@@ -115,11 +115,6 @@ export class ViewListingsComponent {
     this.displayDialog = true; // Show the dialog
   }
 
-  closeDialog() {
-    this.displayDialog = false; // Hide the dialog
-    this.selectedListing = undefined; // Reset selected listing
-  }
-
   get totalPages() {
     return Math.ceil(this.listings.length / this.itemsPerPage);
   }

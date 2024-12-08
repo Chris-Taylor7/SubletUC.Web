@@ -14,7 +14,7 @@
           <p class="text-white">${{ listing.rent }}/Month</p>
           <p class="text-white">{{ listing.roommates.length }} Roommates</p>
         </div>
-        <div class="p-4">
+        <div class="p-4 justify-center align-items-center">
           <button
             type="button"
             class="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100
@@ -44,15 +44,9 @@
       </button>
     </div>
   </div>
-  <p-dialog
-    header="Listing Details"
-    [(visible)]="displayDialog"
-    [style]="{ width: '70vw' }"
-    (onHide)="closeDialog()"
-  >
-
-    <app-listing [listing]="selectedListing"></app-listing>
-
-  </p-dialog>
+  @if (displayDialog == true) {
+    <app-listing [listing]="selectedListing" [displayDialog]="displayDialog" ></app-listing>
+  }
 
 </div>
+

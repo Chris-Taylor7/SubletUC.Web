@@ -23,7 +23,7 @@ export class CreateListingComponent {
   )
   {
     this.houseListingForm = this.fb.group({
-      address: ['', Validators.required],
+      address: [null, Validators.required],
       rent: [0, [Validators.required, Validators.min(0)]],
       bedrooms: [null, Validators.required],
       bathrooms: [null, Validators.required],
@@ -40,7 +40,7 @@ export class CreateListingComponent {
     if (this.houseListingForm.valid) {
       const formData = this.houseListingForm.value;
       debugger
-      this._listingService.createListing(formData);
+      this._listingService.createListing(formData).subscribe();
       // Further logic for submitting the form can be added here
     } else {
       console.log('Form is invalid');

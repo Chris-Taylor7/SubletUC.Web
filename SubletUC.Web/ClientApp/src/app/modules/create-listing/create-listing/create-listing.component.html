@@ -7,26 +7,25 @@
       <!-- Address Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Address</h2>
-        <input
+        <p-inputText
           id="address"
           formControlName="address"
-          pInputText
           placeholder="Enter the address"
-          class="input-field"
-        />
+          class="w-full"
+        ></p-inputText>
       </div>
 
       <!-- Rent Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Rent ($)</h2>
-        <input
+        <p-inputNumber
           id="rent"
-          type="number"
           formControlName="rent"
-          pInputText
           placeholder="Enter the rent amount"
-          class="input-field"
-        />
+          [mode]="'decimal'"
+          [minFractionDigits]="0"
+          class="w-full"
+        ></p-inputNumber>
       </div>
 
       <!-- Bedrooms Section -->
@@ -44,31 +43,35 @@
       <!-- Utilities Included -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <p-checkbox
-          formControlName="utilitiesIncludedInRent"          label="Utilities Included?"
-          class="custom-checkbox text-white"
+          formControlName="utilitiesIncludedInRent"
+          label="Utilities Included?"
+          class="text-white"
         ></p-checkbox>
       </div>
 
       <!-- Shared Room -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <p-checkbox
-          formControlName="sharedRoom"          label="Shared Room?"
-          class="custom-checkbox text-white mr-2"
+          formControlName="sharedRoom"
+          label="Shared Room?"
+          class="text-white mb-3"
         ></p-checkbox>
-        <input
+        <p-inputNumber
           id="sharedRoommates"
-          type="number"
           formControlName="sharedRoommates"
           placeholder="Number of Roommates"
-          class="input-field mt-3 mr-2"
-        />
+          [mode]="'decimal'"
+          [minFractionDigits]="0"
+          class="w-full"
+        ></p-inputNumber>
       </div>
 
       <!-- Pets Allowed -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <p-checkbox
-          formControlName="catsAndDogsAllowed"          label="Cats and Dogs Allowed?"
-          class="custom-checkbox text-white"
+          formControlName="catsAndDogsAllowed"
+          label="Cats and Dogs Allowed?"
+          class="text-white"
         ></p-checkbox>
       </div>
 
@@ -77,21 +80,21 @@
         <p-checkbox
           formControlName="washerDryer"
           label="Washer and Dryer Available?"
-          class="custom-checkbox text-white"
+          class="text-white"
         ></p-checkbox>
       </div>
 
       <!-- Additional Notes -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Additional Notes</h2>
-        <textarea
+        <p-inputTextarea
           id="notes"
           rows="4"
           formControlName="notes"
-          pInputTextarea
           placeholder="Any additional notes..."
-          class="input-field"
-        ></textarea>
+          autoResize="true"
+          class="w-full"
+        ></p-inputTextarea>
       </div>
 
       <!-- Submit Button -->
@@ -99,10 +102,10 @@
         <button
           type="submit"
           pButton
-          class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
-        >
-          Create Listing
-        </button>
+          title="submit"
+          label="Create Listing"
+          class="p-button-rounded border-solid p-button-danger w-40 h-20"
+        ></button>
       </div>
     </form>
   </div>
