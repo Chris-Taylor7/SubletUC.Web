@@ -5,3 +5,4 @@ SubletUC.Data/obj/*
 
 SubletUC.Services/bin/*
 SubletUC.Services/obj/*
+.fake

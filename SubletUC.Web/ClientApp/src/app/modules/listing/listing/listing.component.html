@@ -1,1 +1,36 @@
-<p>listing works!</p>
+<p-dialog
+  header="Listing Details"
+  [style]="{ width: '70vw' }"
+  (onHide)="closeDialog()"
+
+>
+  <div class="bg-white rounded-lg shadow-md p-4">
+    <div class="flex justify-between items-center">
+      <h3 class="text-lg font-bold">Amenities</h3>
+      <div class="flex space-x-2">
+      </div>
+    </div>
+    <ul class="list-disc pl-4">
+      <li>{{ listing?.catsAndDogsAllowed ? 'Cats and Dogs Allowed' : 'None provided' }}</li>
+      <li>{{ listing?.washerDryer ? 'In-Unit Washer/Dryer' : 'None provided' }}</li>
+      <li>{{ listing?.offStreetParking ? 'Off-Street Parking' : 'None provided' }}</li>
+    </ul>
+
+    <div class="flex justify-between items-center mt-4">
+      <h3 class="text-lg font-bold">Statistics</h3>
+      <button class="text-blue-500 hover:underline">Message Lister</button>
+    </div>
+    <ul class="list-disc pl-4">
+      <li>Availability: {{ listing?.availability }}</li>
+      <li>Roommates: {{ listing?.roommates }}</li>
+      <li>Bathrooms: {{ listing?.bathrooms }}</li>
+      <li>Walk to Campus: {{ listing?.distanceFromCampus }} minutes</li>
+    </ul>
+
+    <div class="mt-4">
+      <h3 class="text-lg font-bold">Description</h3>
+      <p>{{ listing?.description }}</p>
+    </div>
+  </div>
+
+</p-dialog>

@@ -1,1 +1,37 @@
-<p>profile works!</p>
+<div
+  class="flex items-center justify-center min-h-screen bg-gradient-to-br from-black to-gray-900 py-16 px-8"
+>
+  <div class="container max-w-5xl bg-gray-900/80 shadow-2xl rounded-xl p-12">
+    <h1 class="text-5xl font-extrabold text-center text-red-600 mb-12">My Profile</h1>
+
+    <!-- User Information Section -->
+    <div class="p-8 bg-gray-800/50 rounded-lg shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-white">Account Information</h2>
+      <div class="space-y-4">
+        <p class="text-white"><strong>Name:</strong> {{ currentUser.userName }}</p>
+        <p class="text-white"><strong>Email:</strong> {{ currentUser.email }}</p>
+        <p class="text-white"><strong>Member Since:</strong> {{ currentUser.createdAt }}</p>
+      </div>
+    </div>
+
+    <!-- User Listings Section -->
+    <div class="p-8 bg-gray-800/50 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 text-white">My Listings</h2>
+
+      <div *ngIf="listings.length > 0; else noListings">
+        <div *ngFor="let listing of listings" class="p-6 bg-gray-800 rounded-lg shadow-md mb-6">
+          <h3 class="text-xl font-bold text-red-500 mb-2">{{ listing.address }}</h3>
+          <p class="text-white"><strong>Rent:</strong> ${{ listing.rent }}</p>
+          <p class="text-white"><strong>Bedrooms:</strong> {{ listing.bedrooms }}</p>
+          <p class="text-white"><strong>Bathrooms:</strong> {{ listing.bathrooms }}</p>
+          <p class="text-white"><strong>Available:</strong> {{ listing.availability }}</p>
+          <p class="text-white">{{ listing.notes }}</p>
+        </div>
+      </div>
+
+      <ng-template #noListings>
+        <p class="text-white text-center">You have no listings yet.</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

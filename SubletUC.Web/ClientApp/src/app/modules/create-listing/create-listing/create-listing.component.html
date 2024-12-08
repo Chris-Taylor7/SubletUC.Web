@@ -1,1 +1,112 @@
-<p>create-listing works!</p>
+<body class="min-h-screen bg-gradient-to-br from-red-500 to-gray-800">
+  <div class="container mx-auto py-16 px-8">
+    <h1 class="text-5xl font-extrabold text-center text-white mb-12">Create a House Listing</h1>
+
+    <form [formGroup]="houseListingForm" (ngSubmit)="onSubmit()" class="max-w-3xl mx-auto space-y-8 grid grid-cols-1 gap-6">
+
+      <!-- Address Section -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4 text-white">Address</h2>
+        <p-inputText
+          id="address"
+          formControlName="address"
+          placeholder="Enter the address"
+          class="w-full"
+        ></p-inputText>
+      </div>
+
+      <!-- Rent Section -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4 text-white">Rent ($)</h2>
+        <p-inputNumber
+          id="rent"
+          formControlName="rent"
+          placeholder="Enter the rent amount"
+          [mode]="'decimal'"
+          [minFractionDigits]="0"
+          class="w-full"
+        ></p-inputNumber>
+      </div>
+
+      <!-- Bedrooms Section -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4 text-white">Number of Bedrooms</h2>
+        <app-bedroom-dropdown formControlName="bedrooms"></app-bedroom-dropdown>
+      </div>
+
+      <!-- Bathrooms Section -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4 text-white">Number of Bathrooms</h2>
+        <app-bathroom-dropdown formControlName="bathrooms"></app-bathroom-dropdown>
+      </div>
+
+      <!-- Utilities Included -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <p-checkbox
+          formControlName="utilitiesIncludedInRent"
+          label="Utilities Included?"
+          class="text-white"
+        ></p-checkbox>
+      </div>
+
+      <!-- Shared Room -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <p-checkbox
+          formControlName="sharedRoom"
+          label="Shared Room?"
+          class="text-white mb-3"
+        ></p-checkbox>
+        <p-inputNumber
+          id="sharedRoommates"
+          formControlName="sharedRoommates"
+          placeholder="Number of Roommates"
+          [mode]="'decimal'"
+          [minFractionDigits]="0"
+          class="w-full"
+        ></p-inputNumber>
+      </div>
+
+      <!-- Pets Allowed -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <p-checkbox
+          formControlName="catsAndDogsAllowed"
+          label="Cats and Dogs Allowed?"
+          class="text-white"
+        ></p-checkbox>
+      </div>
+
+      <!-- Washer/Dryer -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <p-checkbox
+          formControlName="washerDryer"
+          label="Washer and Dryer Available?"
+          class="text-white"
+        ></p-checkbox>
+      </div>
+
+      <!-- Additional Notes -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4 text-white">Additional Notes</h2>
+        <p-inputTextarea
+          id="notes"
+          rows="4"
+          formControlName="notes"
+          placeholder="Any additional notes..."
+          autoResize="true"
+          class="w-full"
+        ></p-inputTextarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center col-span-1">
+        <button
+          type="submit"
+          pButton
+          title="submit"
+          label="Create Listing"
+          class="p-button-rounded border-solid p-button-danger w-40 h-20"
+        ></button>
+      </div>
+    </form>
+  </div>
+</body>
