@@ -14,6 +14,13 @@ import { ProfileModule } from './modules/profile/profile.module';
 import { ViewListingsModule } from './modules/view-listings/view-listings.module';
 import { MessageModule } from './modules/message/message.module';
 import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -31,7 +38,14 @@ import { DialogModule } from 'primeng/dialog';
     ProfileModule,
     ViewListingsModule,
     MessageModule,
-    DialogModule
+    DialogModule,
+    BrowserAnimationsModule,
+    InputTextModule,
+    InputNumberModule,
+    DropdownModule,
+    CheckboxModule,
+    InputTextareaModule,
+    ButtonModule,
 
   ],
   providers: [],

@@ -87,7 +87,7 @@ export class ViewListingsComponent {
 
 
   ngOnInit(): void {
-    this.loadListings();
+    //this.loadListings();
     this.updatePaginatedListings();
   }
 

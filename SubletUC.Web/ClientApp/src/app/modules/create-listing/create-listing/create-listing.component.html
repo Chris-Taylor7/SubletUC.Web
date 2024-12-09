@@ -13,6 +13,9 @@
           placeholder="Enter the address"
           class="w-full"
         ></p-inputText>
+        <div *ngIf="isFieldInvalid('address')" class="text-red-400 mt-2">
+          Address is required.
+        </div>
       </div>
 
       <!-- Rent Section -->
@@ -26,18 +29,35 @@
           [minFractionDigits]="0"
           class="w-full"
         ></p-inputNumber>
+        <div *ngIf="isFieldInvalid('rent')" class="text-red-400 mt-2">
+          Rent is required and must be greater than 0.
+        </div>
       </div>
 
       <!-- Bedrooms Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Number of Bedrooms</h2>
-        <app-bedroom-dropdown formControlName="bedrooms"></app-bedroom-dropdown>
+        <p-dropdown
+          formControlName="bedrooms"
+          [options]="bedroomsOptions"
+          placeholder="Select Bedroom Count"
+        ></p-dropdown>
+        <div *ngIf="isFieldInvalid('bedrooms')" class="text-red-400 mt-2">
+          Please select the number of bedrooms.
+        </div>
       </div>
 
       <!-- Bathrooms Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Number of Bathrooms</h2>
-        <app-bathroom-dropdown formControlName="bathrooms"></app-bathroom-dropdown>
+        <p-dropdown
+          formControlName="bathrooms"
+          [options]="bathroomsOptions"
+          placeholder="Select Bathroom Count"
+        ></p-dropdown>
+        <div *ngIf="isFieldInvalid('bathrooms')" class="text-red-400 mt-2">
+          Please select the number of bathrooms.
+        </div>
       </div>
 
       <!-- Utilities Included -->
@@ -64,6 +84,9 @@
           [minFractionDigits]="0"
           class="w-full"
         ></p-inputNumber>
+        <div *ngIf="isFieldInvalid('sharedRoommates')" class="text-red-400 mt-2">
+          Number of roommates is required if shared room is selected.
+        </div>
       </div>
 
       <!-- Pets Allowed -->
