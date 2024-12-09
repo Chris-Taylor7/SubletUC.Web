@@ -7,12 +7,18 @@
       <!-- Address Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Address</h2>
-        <p-inputText
+        <!-- <p-inputText
           id="address"
           formControlName="address"
           placeholder="Enter the address"
           class="w-full"
-        ></p-inputText>
+        ></p-inputText> -->
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="address"
+          type="text"
+          placeholder="Address here..."
+          formControlName = "address"
+          >
         <div *ngIf="isFieldInvalid('address')" class="text-red-400 mt-2">
           Address is required.
         </div>
@@ -21,14 +27,26 @@
       <!-- Rent Section -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Rent ($)</h2>
-        <p-inputNumber
+        <!-- <p-inputNumber
           id="rent"
           formControlName="rent"
           placeholder="Enter the rent amount"
           [mode]="'decimal'"
           [minFractionDigits]="0"
-          class="w-full"
-        ></p-inputNumber>
+          class="w-full h-8"
+        ></p-inputNumber> -->
+
+        <input
+        type="number"
+        id="rent"
+        formControlName="rent"
+        aria-describedby="helper-text-explanation"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500
+        block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+        dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Rent value here..."
+        required />
+
         <div *ngIf="isFieldInvalid('rent')" class="text-red-400 mt-2">
           Rent is required and must be greater than 0.
         </div>
@@ -76,6 +94,7 @@
           label="Shared Room?"
           class="text-white mb-3"
         ></p-checkbox>
+        <!-- show input if shared room is checked -->
         <p-inputNumber
           id="sharedRoommates"
           formControlName="sharedRoommates"
@@ -110,14 +129,22 @@
       <!-- Additional Notes -->
       <div class="p-6 bg-gray-800 rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 text-white">Additional Notes</h2>
-        <p-inputTextarea
+        <!-- <p-inputTextarea
           id="notes"
           rows="4"
           formControlName="notes"
           placeholder="Any additional notes..."
           autoResize="true"
           class="w-full"
-        ></p-inputTextarea>
+        ></p-inputTextarea> -->
+        <textarea
+        class="w-full resize rounded-md"
+        id="notes"
+        rows="4"
+        formControlName="notes"
+        placeholder="Any additional notes..."
+        ></textarea>
+
       </div>
 
       <!-- Submit Button -->

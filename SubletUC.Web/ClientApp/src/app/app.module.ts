@@ -46,6 +46,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
     CheckboxModule,
     InputTextareaModule,
     ButtonModule,
+    InputTextareaModule
 
   ],
   providers: [],

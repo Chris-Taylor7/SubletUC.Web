@@ -67,17 +67,6 @@ export class CreateListingComponent implements OnInit {
     this.loading = true;
     const formData = this.houseListingForm.value;
 
-    this._listingService.createListing(formData).subscribe({
-      next: (response) => {
-        this.loading = false;
-        alert('Listing created successfully!');
-        this.houseListingForm.reset();
-      },
-      error: (error) => {
-        this.loading = false;
-        console.error('Error:', error);
-        alert('An error occurred while creating the listing.');
-      },
-    });
+    this._listingService.createListing(formData).subscribe();
   }
 }
